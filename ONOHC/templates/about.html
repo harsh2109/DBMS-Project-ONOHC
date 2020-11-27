@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+    about us
+{% endblock title %}
+
+{% block body %}
+	{% load static %}
+    <header class="bg-dark text-center py-5 my-4">
+		<div class="container">
+			<h1 class="font-weight-dark text-white">Meet the Team</h1>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+		    <div class="col-xl-6 col-md-6 mb-4">
+		    	<div class="card border-0 shadow">
+		        	<img src="{% static '/images/gunpreet.jpg' %}" class="card-img-top" alt="...">
+		        	<div class="card-body text-center">
+		        		<h5 class="card-title mb-0">Gunpreet Kaur</h5>
+		        		<div class="card-text text-black-50">Web Developer</div>
+		        	</div>
+		      	</div>
+		    </div>
+		    
+		    <div class="col-xl-6 col-md-6 mb-4">
+		      	<div class="card border-0 shadow">
+		        	<img src="{% static '/images/sapna.jpg' %}" class="card-img-top" alt="...">
+		        	<div class="card-body text-center">
+		          		<h5 class="card-title mb-0">N Sapna</h5>
+		          		<div class="card-text text-black-50">Web Developer</div>
+		        	</div>
+		      	</div>
+		    </div>
+		    
+		    <div class="col-xl-6 col-md-6 mb-4">
+		      	<div class="card border-0 shadow">
+		        	<img src="{% static '/images/dubey.jpg' %}" class="card-img-top" alt="...">
+		        	<div class="card-body text-center">
+		        		<h5 class="card-title mb-0">Harshvardhan Dubey</h5>
+		          		<div class="card-text text-black-50">Web Developer</div>
+		        	</div>
+		      	</div>
+		    </div>
+		   
+		    <div class="col-xl-6 col-md-6 mb-4">
+		      	<div class="card border-0 shadow">
+		        	<img src="{% static '/images/arpan.jpg' %}" class="card-img-top" alt="...">
+		        	<div class="card-body text-center">
+		          		<h5 class="card-title mb-0">Arpan Tyagi</h5>
+		          		<div class="card-text text-black-50">Web Developer</div>
+		        	</div>
+		      	</div>
+		    </div>
+		</div>
+	</div>
+{% endblock body %}

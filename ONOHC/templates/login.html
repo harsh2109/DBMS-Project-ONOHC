@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}
+	login
+{% endblock title %}
+
+{% block body %}
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}">
+	<div class="MAIN-FORM container">
+	    <div>
+	        <h1 style="text-align: center;">Login!</h1>
+	        <div style="width: 30%; margin: 25px auto;">
+				<form>
+					<div class="form-group">
+						<label for="username6">Username</label>
+						<input class="form-control" type="text" id="username6" name="username" placeholder="username">
+					</div>
+					<div class="form-group">
+						<label for="password6">Password</label>
+						<input class="form-control" type="password" id="password6" name="password" placeholder="password">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-primary custom-btn btn-block">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock body %}
